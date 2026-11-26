@@ -1,4 +1,6 @@
 def to_grade(score):
+    if score < 0 or score > 100:
+        raise ValueError("score must be between 0 and 100")
     if score >= 80:
         return "A"
     elif score >= 70:
@@ -13,6 +15,10 @@ def to_grade(score):
 
 def average(scores):
     return sum(scores) / len(scores) if scores else 0
+
+
+def is_pass(score):
+    return score >= 50
 
 
 if __name__ == "__main__":
