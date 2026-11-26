@@ -1,0 +1,6 @@
+git clone https://github.com/pakinka69-dev/lab01-69114540334.git 
+cd lab01-69114540334 
+python main.py 
+git add . 
+git commit -m "Complete lab 1" 
+git push 
